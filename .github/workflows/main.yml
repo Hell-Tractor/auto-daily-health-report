@@ -31,6 +31,6 @@ jobs:
     - name: running check in for cxl
       env:
         xmu_username: ${{ secrets.xmu_cxl_username }}
-        xmu_password: ${{ secrets.xmu_password }}
+        xmu_password: ${{ secrets.xmu_cxl_password }}
         server_chan_secret: ${{ secrets.server_chan_secret }}
       run: python workflow.py
